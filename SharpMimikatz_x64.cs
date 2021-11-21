@@ -98,7 +98,7 @@ namespace PELoader
                     {
                         case 0x0:
                             break;
-                        case 0xA:
+                        case 0x3:
                             patchAddr = (IntPtr)((long)(dest.ToInt64() + (int)fixup));
                             long originalAddr = Marshal.ReadInt64(patchAddr);
                             Marshal.WriteInt64(patchAddr, originalAddr + delta);
